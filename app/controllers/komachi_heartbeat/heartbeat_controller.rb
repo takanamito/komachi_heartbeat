@@ -43,6 +43,8 @@ module KomachiHeartbeat
     end
 
     def db_connection_check
+      return KomachiHeartbeat.config.db_check_query.call if KomachiHeartbeat.config.db_check_query
+
       connection_database_class_names.each do |klass|
         klass.constantize.connection.execute "SELECT 1"
       end
