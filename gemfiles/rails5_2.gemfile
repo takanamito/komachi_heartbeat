@@ -2,4 +2,9 @@ source "https://rubygems.org"
 
 gem 'rails', "~> 5.2.0"
 
+# listen v3.1.0 requires Ruby version >= 2.2.3, ~> 2.2.
+if Gem::Version.create(RUBY_VERSION.dup) < Gem::Version.create("2.2")
+  gem "listen", "< 3.1.0"
+end
+
 gemspec path: '../'
