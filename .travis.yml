@@ -45,19 +45,19 @@ matrix:
       gemfile: gemfiles/rails5_0.gemfile
     - rvm: 2.0.0
       gemfile: gemfiles/rails5_0.gemfile
-    - rvm: 2.1.2
+    - rvm: 2.1.10
       gemfile: gemfiles/rails5_0.gemfile
     - rvm: 1.9.3
       gemfile: gemfiles/rails5_1.gemfile
     - rvm: 2.0.0
       gemfile: gemfiles/rails5_1.gemfile
-    - rvm: 2.1.2
+    - rvm: 2.1.10
       gemfile: gemfiles/rails5_1.gemfile
     - rvm: 1.9.3
       gemfile: gemfiles/rails5_2.gemfile
     - rvm: 2.0.0
       gemfile: gemfiles/rails5_2.gemfile
-    - rvm: 2.1.2
+    - rvm: 2.1.10
       gemfile: gemfiles/rails5_2.gemfile
 
     # NOTE: Rails 4.2 doesn't work on MRI 2.6+
